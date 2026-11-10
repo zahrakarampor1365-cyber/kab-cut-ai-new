@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>کب کات | KAB CUT AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">KC</div>
+    <div>
+      <h1>کب کات</h1>
+      <small>KAB CUT AI</small>
+    </div>
+    <button id="settingsBtn">⚙ تنظیمات</button>
+  </header>
+
+  <main>
+    <aside>
+      <button id="newChat">＋ گفت‌وگوی جدید</button>
+      <h3>تاریخچه گفتگوها</h3>
+      <div id="history"></div>
+      <button id="deleteAll">حذف همه گفتگوها</button>
+    </aside>
+
+    <section>
+      <div id="messages">
+        <h2>به کب کات خوش آمدی 💙</h2>
+        <p>سؤالت را بنویس و گفتگو را شروع کن.</p>
+      </div>
+
+      <div class="composer">
+        <textarea id="prompt" placeholder="پیامت را بنویس..."></textarea>
+        <button id="send">ارسال</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="settings" class="hidden">
+    <h2>تنظیمات هوش مصنوعی</h2>
+    <label>منبع: Groq</label>
+    <label>API Key</label>
+    <input id="apiKey" type="password">
+    <label>نام مدل</label>
+    <input id="model" value="llama-3.3-70b-versatile">
+    <label>آدرس API</label>
+    <input id="baseUrl" value="https://api.groq.com/openai/v1">
+    <button id="saveSettings">ذخیره تنظیمات</button>
+    <button id="closeSettings">بستن</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
