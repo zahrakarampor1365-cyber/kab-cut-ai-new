@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080d18;
+  color: white;
+  font-family: Tahoma, sans-serif;
+}
+
+header {
+  background: #101a2c;
+  border-bottom: 2px solid #1677ff;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  background: #1677ff;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  color: #54a0ff;
+}
+
+header button {
+  margin-right: auto;
+}
+
+button {
+  background: #1264d8;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  min-height: 80vh;
+}
+
+aside {
+  width: 260px;
+  background: #101a2c;
+  padding: 15px;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+#messages {
+  flex: 1;
+  padding: 20px;
+  min-height: 350px;
+}
+
+.composer {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: #101a2c;
+}
+
+textarea, input {
+  background: #17243a;
+  color: white;
+  border: 1px solid #347edc;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 55px;
+  resize: vertical;
+}
+
+#settings {
+  background: #101a2c;
+  padding: 20px;
+  margin: 15px;
+  border: 1px solid #347edc;
+  border-radius: 15px;
+}
+
+#settings label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+}
